@@ -46,8 +46,7 @@ class Sample {
 
     /**
      * Gets portrait of the composer for a sample by the sample ID.
-     *
-     * @param context  The application context.
+     * @param context The application context.
      * @param sampleID The sample ID.
      * @return The portrait Bitmap.
      */
@@ -61,8 +60,7 @@ class Sample {
 
     /**
      * Gets a single sample by its ID.
-     *
-     * @param context  The application context.
+     * @param context The application context.
      * @param sampleID The sample ID.
      * @return The sample object.
      */
@@ -87,7 +85,6 @@ class Sample {
 
     /**
      * Gets and ArrayList of the IDs for all of the Samples from the JSON file.
-     *
      * @param context The application context.
      * @return The ArrayList of all sample IDs.
      */
@@ -109,7 +106,6 @@ class Sample {
 
     /**
      * Method used for obtaining a single sample from the JSON file.
-     *
      * @param reader The JSON reader object pointing a single sample JSON object.
      * @return The Sample the JsonReader is pointing to.
      */
@@ -154,7 +150,6 @@ class Sample {
 
     /**
      * Method for creating a JsonReader object that points to the JSON array of samples.
-     *
      * @param context The application context.
      * @return The JsonReader object pointing to the JSON array of samples.
      * @throws IOException Exception thrown if the sample file can't be found.

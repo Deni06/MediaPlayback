@@ -22,7 +22,6 @@ class QuizUtils {
     /**
      * Generates an ArrayList of Integers that contains IDs to NUM_ANSWERS samples. These samples
      * constitute the possible answers to the question.
-     *
      * @param remainingSampleIDs The ArrayList of Integers which contains the IDs of all
      *                           samples that haven't been used yet.
      * @return The ArrayList of possible answers.
@@ -46,7 +45,6 @@ class QuizUtils {
 
     /**
      * Helper method for getting the user's high score.
-     *
      * @param context The application context.
      * @return The user's high score.
      */
@@ -58,8 +56,7 @@ class QuizUtils {
 
     /**
      * Helper method for setting the user's high score.
-     *
-     * @param context   The application context.
+     * @param context The application context.
      * @param highScore The user's high score.
      */
     static void setHighScore(Context context, int highScore) {
@@ -72,7 +69,6 @@ class QuizUtils {
 
     /**
      * Helper method for getting the user's current score.
-     *
      * @param context The application context.
      * @return The user's current score.
      */
@@ -84,8 +80,7 @@ class QuizUtils {
 
     /**
      * Helper method for setting the user's current score.
-     *
-     * @param context      The application context.
+     * @param context The application context.
      * @param currentScore The user's current score.
      */
     static void setCurrentScore(Context context, int currentScore) {
@@ -98,7 +93,6 @@ class QuizUtils {
 
     /**
      * Picks one of the possible answers to be the correct one at random.
-     *
      * @param answers The possible answers to the question.
      * @return The correct answer.
      */
@@ -110,9 +104,8 @@ class QuizUtils {
 
     /**
      * Checks that the user's selected answer is the correct one.
-     *
      * @param correctAnswer The correct answer.
-     * @param userAnswer    The user's answer
+     * @param userAnswer The user's answer
      * @return true if the user is correct, false otherwise.
      */
     static boolean userCorrect(int correctAnswer, int userAnswer) {
@@ -122,7 +115,6 @@ class QuizUtils {
 
     /**
      * Helper method for ending the game.
-     *
      * @param context The application method.
      */
     static void endGame(Context context) {
@@ -130,5 +122,4 @@ class QuizUtils {
         endGame.putExtra(GAME_FINISHED, true);
         context.startActivity(endGame);
     }
-
 }
